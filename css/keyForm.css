@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+
+body,
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    user-select: none;
+    color: #FFFFFF;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modale {
+    transition: all 0.3s;
+}
+
+.container__keyForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 99999999;
+    width: 100%;
+    backdrop-filter: blur(15px);
+}
+
+.keyForm__content {
+    max-width: 290px;
+    text-align: center;
+    position: relative;
+}
+
+.keyForm__block {
+    padding: 0 60px;
+    height: 609px;
+    background: #100505;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.keyForm__block::after {
+    content: '';
+    background: rgba(255, 20, 20, 0.5);
+    filter: blur(78.5px);
+    width: 424px;
+    height: 235px;
+    position: absolute;
+    top: -226px;
+    left: -10px;
+}
+
+.keyForm__logo {
+    position: relative;
+    z-index: 1;
+    margin-top: 40px;
+}
+
+.keyForm__description {
+    color: #884949;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 140%;
+    margin: 24px 0 36px 0;
+}
+
+.keyForm__input {
+    vertical-align: top;
+    position: relative;
+}
+
+input[type="text"] {
+    border: 0;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    outline: none;
+    width: 100%;
+    background: #0B0202 !important;
+    color: #FFDADA;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    padding: 19px 0 19px 10px;
+    margin-bottom: 20px;
+    transition: all 0.3s
+}
+
+input:focus {
+    border: 1px solid #C60D0D;
+}
+
+.form-label {
+    position: absolute;
+    top: 18px;
+    pointer-events: none;
+    overflow: hidden;
+    line-height: 40px;
+    transition: .3s;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: rgba(147, 97, 97, 0.4);
+    left: 8px;
+}
+
+input:focus,
+input:not(:focus):valid {
+    padding: 25px 0 10px 10px;
+}
+
+input:focus~.form-label,
+input:not(:focus):valid~.form-label {
+    top: 8px;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+}
+
+.modal-close-button {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    position: absolute;
+    top: -20px;
+    right: -40px;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0);
+    border: 0;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.buttonForm {
+    background: linear-gradient(93.52deg, #D22424 -2.3%, #920A0A 98.18%);
+    border-radius: 5.98446px;
+    padding: 20px 90px;
+	color: #fff;
+    font-weight: 600;
+    font-size: 16.7565px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.buttonForm::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 59px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: -2.39378px 0px 11.9689px rgba(0, 0, 0, 0.1);
+    border-radius: 50px 15px 15px 50px;
+    top: 0;
+    right: 0;
+}
+
+.buttonForm::before {
+    content: '';
+    position: absolute;
+    width: 21.54px;
+    height: 13.17px;
+    background-image: url(../images/arrow.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 22px;
+    right: 15px;
+}
+
+.keyForm__socialTitle {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+    color: #562828;
+    padding-top: 33px
+}
+
+.keyForm__errorTitle {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+    color: #562828;
+}
+
+.buttonDownload__title img{
+    width: 40px;
+    margin-right: 5px;
+}
+.keyForm__social-flex {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+    margin-top: 24px;
+}
+
+.keyForm__social-button {
+    width: 149px;
+    height: 49px;
+    background: #5865F2;
+    border-radius: 3.59067px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.keyForm__social-telegram{
+    background: #468EE0;
+}
+@media(min-height: 633px){
+    .container__keyForm{
+        height: 100%;
+    }
+}
